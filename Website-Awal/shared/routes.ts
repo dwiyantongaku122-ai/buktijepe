@@ -127,7 +127,7 @@ export const api = {
       method: 'GET' as const,
       path: '/api/user' as const,
       responses: {
-        200: z.custom<typeof insertUserSchema>().nullable(), // Returns user or null
+        200: z.custom<typeof insertUserSchema>().nullable(),
       },
     },
   },
